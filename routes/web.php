@@ -17,4 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PagesController::class, 'root'])->name('root');
 
 /* ----------------------------以下路由可用 Auth::routes(); 代替------------------------------- */
-Auth::routes();
+Auth::routes(['verify' => true]);
